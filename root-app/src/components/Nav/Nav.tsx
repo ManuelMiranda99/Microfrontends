@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import { styles } from "./Nav.styles";
-import { pages, newPages } from "../../shared/constants/Pages";
+import { newPages } from "../../shared/constants/Pages";
 
 const Nav = () => {
   return (
@@ -38,17 +38,6 @@ const Nav = () => {
                   {page.label}
                 </Button>
               ))}
-              {/*pages.map((page) => (
-                <Button
-                  onClick={() => {
-                    window.location.href = page.route;
-                  }}
-                  key={page.label}
-                  sx={styles.option}
-                >
-                  {page.label}
-                </Button>
-                ))*/}
             </Box>
           </Toolbar>
         </Container>
@@ -58,9 +47,6 @@ const Nav = () => {
         {newPages.map((page, index) => (
           <div key={index} id={`${page.htmlImport}:${page.name}`}></div>
         ))}
-        {/*pages.map((page) => (
-          <div key={page.label} id={`single-spa-test:${page.name}`}></div>
-        ))*/}
       </main>
     </div>
   );

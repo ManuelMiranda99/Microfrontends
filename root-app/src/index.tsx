@@ -40,18 +40,4 @@ newPages.forEach((page) => {
   });
 });
 
-/*registerApplication({
-  name: "app-angular",
-  app: (): Promise<LifeCycles> =>
-    (window as any).System.import("http://localhost:4200/main.js"),
-  activeWhen: "/angular",
-});
-
-registerApplication({
-  name: "app-react",
-  app: (): Promise<LifeCycles> =>
-    (window as any).System.import("@single-spa-test/app-react"),
-  activeWhen: "/react",
-});*/
-
 start();
